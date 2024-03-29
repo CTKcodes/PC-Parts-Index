@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Parts Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .img-button {
+            border: 2px solid black;
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            background-color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        body {
+            background-image: url('Images/bg.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0; 
+            background-color: #333;
+        }
+
+        h1, h3, p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center my-5">
+        <h1><b>Welcome to my PC Parts Index!</b></h1>
+        <h3 class="mb-3">Here you can find different types of PC parts (All Prices are in USD)</h3>
+
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <a href="CPU/cpu.html">
+                    <img src="Images/cpu.png" class="img-fluid img-button" alt="CPU">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="COOL/col.html">
+                    <img src="Images/coo.png" class="img-fluid img-button" alt="Cooler">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="RAM/ram.html">
+                    <img src="Images/ram.png" class="img-fluid img-button" alt="RAM">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="MTB/mtb.html">
+                    <img src="Images/mtb.png" class="img-fluid img-button" alt="Motherboard">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-3">
+                <a href="SSD/ssd.html">
+                    <img src="Images/ssd.png" class="img-fluid img-button" alt="SSD">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="GPU/gpu.html">
+                    <img src="Images/gpu.png" class="img-fluid img-button" alt="GPU">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="PSU/psu.html">
+                    <img src="Images/psu.png" class="img-fluid img-button" alt="PSU">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="CASE/case.html">
+                    <img src="Images/cas.png" class="img-fluid img-button" alt="Case">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="col-12 text-center">
+            <p><i>Up to date with PC Part Picker as of March 27, 2024. Credits to <a href="https://github.com/docyx/pc-part-dataset" target="_blank">docyx</a> for the database scrape.</i></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
